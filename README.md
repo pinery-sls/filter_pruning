@@ -100,32 +100,28 @@ ImageNet: ResNet
 \end{table}
 
 ## Result of ImageNet
-\begin{table}[ht]
-	\caption{Pruning results of ResNet50 on ImageNet.}
-	\centering
-	\begin{tabular}{ccccc}
-		\hline Model & Top-1\% & Top-5\% &  FLOPs & Parameters \\
-		\hline ResNet50\citep{luo2017thinet} & 76.15 & 92.87 & 4.09 $\mathrm{~B}$ & 25.50 $\mathrm{M}$ \\
-		SSS-32\citep{huang2018data}  & 74.18 & 91.91 & 2.82 $\mathrm{~B}$ & 18.60 $\mathrm{M}$ \\
-		\citep{he2017channel} & 72.30 & 90.80 & 2.73 $\mathrm{~B}$ & - \\
-		GAL-0.5\citep{lin2019towards} & 71.95 & 90.94 & 2.33 $\mathrm{~B}$ & 21.20 $\mathrm{M}$ \\
-		HRank\citep{lin2020hrank}  & 74.98 & 92.33 & 2.30 $\mathrm{~B}$ & 16.15 $\mathrm{M}$ \\
-		GDP-0.6\citep{lin2018accelerating} & 71.19 & 90.71 & 1.88 $\mathrm{~B}$ & - \\
-		GDP-0.5\citep{lin2018accelerating} & 69.58 & 90.14 & 1.57 $\mathrm{~B}$ & - \\
-		SSS-26\citep{huang2018data}  & 71.82 & 90.79 & 2.33 $\mathrm{~B}$ & 15.60 $\mathrm{M}$ \\
-		GAL-1\citep{lin2019towards}  & 69.88 & 89.75 & 1.58 $\mathrm{~B}$ & 14.67 $\mathrm{M}$ \\
-		GAL-0.5-joint\citep{lin2019towards}  & 71.80 & 90.82 & 1.84 $\mathrm{~B}$ & 19.31 $\mathrm{M}$ \\
-		HRank\citep{lin2020hrank} & 71.98 & 91.01 & 1.55 $\mathrm{~B}$ & 13.77 $\mathrm{M}$ \\
-		ThiNet-50\citep{luo2017thinet}  & 68.42 & 88.30 & 1.10 $\mathrm{~B}$ & 8.66 $\mathrm{M}$ \\
-		GAL-1-joint\citep{lin2019towards}  & 69.31 & 89.12 & 1.11 $\mathrm{~B}$ & 10.21 $\mathrm{M}$ \\
-		HRank\citep{lin2020hrank} & 69.10 & 89.58 & 0.98 $\mathrm{~B}$ & 8.27 $\mathrm{M}$ \\
-		NS\citep{liu2017learning} & 70.43 & 89.93 &  $\mathrm{2.54 B}$ &  $\mathrm{18.33 M}$ \\
-		$\mathbf{Ours-E}$ & $\mathbf{72.02}$ & 90.69 &  $\mathrm{1.84 B}$ &  $\mathrm{11.41 M}$ \\
-		$\mathbf{Ours-E}$ & 70.41 & 89.91 &  $\mathrm{1.41 B}$ &  $\mathrm{8.51 M}$ \\
-		$\mathbf{Ours-P}$ & 69.91 & 89.46 &  $\mathrm{1.70 B}$ &  $\mathrm{11.06 M}$ \\
-		$\mathbf{Ours-P}$ & 68.62 & 88.62 &  $\mathrm{1.34 B}$ &  $\mathrm{8.23 M}$ \\
-		\hline
-	\end{tabular}
-	\label{imagenet}
-\end{table}
+
+\begin{array}{cccccc}
+\hline \multicolumn{1}{c} {\text { Model }} & \text { Top-1\% } & \text { Top-5\% } & \text { FLOPs } & \text { Parameters } \\
+\hline \text { ResNet50(Luo et al., 2017) } & 76.15 & 92.87 & 4.09 & \text { B } & 25.50 \mathrm{M} \\
+\text { SSS-32(Huang and Wang, 2018) } & 74.18 & 91.91 & 2.82 & \text { B } & 18.60 \mathrm{M} \\
+\text { (He et al., 2017) } & 72.30 & 90.80 & 2.73 & \text { B } & - \\
+\text { GAL-0.5(Lin et al., 2019) } & 71.95 & 90.94 & 2.33 & \text { B } & 21.20 \mathrm{M} \\
+\text { HRank(Lin et al., 2020) } & 74.98 & 92.33 & 2.30 & \text { B } & 16.15 \mathrm{M} \\
+\text { GDP-0.6(Lin et al., 2018b) } & 71.19 & 90.71 & 1.88 & \text { B } & - \\
+\text { GDP-0.5(Lin et al., 2018b) } & 69.58 & 90.14 & 1.57 & \text { B } & - \\
+\text { SSS-26(Huang and Wang, 2018) } & 71.82 & 90.79 & 2.33 & \text { B } & 15.60 \mathrm{M} \\
+\text { GAL-1(Lin et al., 2019) } & 69.88 & 89.75 & 1.58 & \text { B } & 14.67 \mathrm{M} \\
+\text { GAL-0.5-joint(Lin et al., 2019) } & 71.80 & 90.82 & 1.84 & \text { B } & 19.31 \mathrm{M} \\
+\text { HRank(Lin et al., 2020) } & 71.98 & 91.01 & 1.55 & \text { B } & 13.77 \mathrm{M} \\
+\text { ThiNet-50(Luo et al., 2017) } & 68.42 & 88.30 & 1.10 & \text { B } & 8.66 \mathrm{M} \\
+\text { GAL-1-joint(Lin et al., 2019) } & 69.31 & 89.12 & 1.11 & \text { B } & 10.21 \mathrm{M} \\
+\text { HRank(Lin et al., 2020) } & 69.10 & 89.58 & 0.98 & \text { B } & 8.27 \mathrm{M} \\
+\text { NS(Liu et al., 2017) } & 70.43 & 89.93 & 2.54 \mathrm{~B} & 18.33 \mathrm{M} \\
+\text { Ours - E } & \mathbf{7 2 . 0 2} & 90.69 & 1.84 \mathrm{~B} & 11.41 \mathrm{M} \\
+\text { Ours - E } & 70.41 & 89.91 & 1.41 \mathrm{~B} & 8.51 \mathrm{M} \\
+\text { Ours - P } & 69.91 & 89.46 & 1.70 \mathrm{~B} & 11.06 \mathrm{M} \\
+\text { Ours - P } & 68.62 & 88.62 & 1.34 \mathrm{~B} & 8.23 \mathrm{M} \\
+\hline
+\end{array}
 

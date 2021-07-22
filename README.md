@@ -101,9 +101,10 @@ ImageNet: ResNet
 
 ## Result of ImageNet
 
-|Model|Top1%|Top5%|FLOPs|Parameters|
-|ResNet50|76.15|92.87|4.09B|25.50M|
-|our_E|72.02|90.69|1.84B|11.41M|
-|our_E|70.41|89.91|1.41B|8.51M|
-|our_P|69.91|89.46|1.70B|11.06M|
-|our_P|68.62|88.62|1.34B|8.23M|
+| Model | Top1% | Top5% | FLOPs | Parameters |
+| ---- | ---- | ---- | ---- | ---- |
+| ResNet50 | 76.15 | 92.87 | 4.09B | 25.50M |
+| our_E | 72.02 | 90.69 | 1.84B | 11.41M |
+| our_E | 70.41 | 89.91 | 1.41B | 8.51M |
+| our_P | 69.91 | 89.46 | 1.70B | 11.06M |
+| our_P | 68.62 | 88.62 | 1.34B | 8.23M |

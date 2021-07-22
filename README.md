@@ -101,6 +101,7 @@ ImageNet: ResNet
 
 ## Result of ImageNet
 
+$$
 \begin{array}{cccccc}
 \hline \multicolumn{1}{c} {\text { Model }} & \text { Top-1\% } & \text { Top-5\% } & \text { FLOPs } & \text { Parameters } \\
 \hline \text { ResNet50(Luo et al., 2017) } & 76.15 & 92.87 & 4.09 & \text { B } & 25.50 \mathrm{M} \\
@@ -124,4 +125,5 @@ ImageNet: ResNet
 \text { Ours - P } & 68.62 & 88.62 & 1.34 \mathrm{~B} & 8.23 \mathrm{M} \\
 \hline
 \end{array}
+$$
 

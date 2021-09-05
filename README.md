@@ -1,9 +1,13 @@
 # Filter Pruning via Measuring Feature Map Information
 
+* My paper is still under review...
+
 Dataset： CIFAR10/100  ImageNet
 
 CIFAR: VGG ResNet DenseNet
 ImageNet: ResNet
+
+* The code is still being sorted out...
 
 ## Result of CIFAR10
 ### VGG16
